@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #efefef;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* WEBSITE STYLING */
+
+/* navbar */
+
+.navbar {
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #9b918e;
+}
+
+.navbar__logo {
+  height: 13.29px;
+}
+
+.navbar__links,
+.navbar__options {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__link,
+.navbar__option {
+  cursor: pointer;
+  font-size: 13.5px;
+}
+
+.margin--left--right {
+  margin: 0 1.5rem;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+}
+
+.hero__img__section {
+  content: '';
+  background-color: #cfc6c3;
+  min-width: 50%;
+  padding: 5rem 1rem;
+}
+
+.hero__img {
+  background: url('https://images.ctfassets.net/rlixqis29eth/60hAyBqHeHcnHUGULzINbx/45e586a8b06cf36a038186078b419bc4/042619_TARA19_LOOK_02_0056_copy.jpg') no-repeat;
+  background-size: cover;
+  width: 348px;
+  height: 452.4px;
+  background-position: 50%;
+  margin-left:25%;
+}
+
+.hero__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__heading,
+.hero h3 {
+  color: #5a5858;
+}
+
+.hero__form__section {
+  margin-left: 8.33333%;
+  width: 66.66667%;
+}
+
+.hero__heading {
+  font-size: 31.5px;
+  margin: 18px 0 9px;
+  margin: 54px 0 0px;
+}
+
+.hero__para {
+  font-weight: 100;
+  font-size: 10.8px;
+  font-size: 18px;
+  letter-spacing: .75rem;
+  margin-bottom: 3rem;
+  color: #A0A0A0;
+}
+
+.hero h3 {
+  margin: 0 0 36px;
+}
+
+.hero__input {
+  margin-bottom: calc(2rem + 4.5px);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #A0A0A0;
+  color: #A0A0A0;
+  margin-right: 3rem;
+  font-size: .6rem;
+  width: 230px;
+  padding-bottom: 5px;
+}
+
+.hero__button {
+  cursor: pointer;
+  padding: 18px 36px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #111;
+  font-family: "Poppins", sans-serif;
+  width: 256px;
+}
+
+#msg {
+  margin-top: 18px; 
+  width: 512px; 
+  margin-right: 0;
+}
+
+.hero__quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #cfc6c3;
+  display: none;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+.hero__hamburger {
+  display: none;
+}
+
+/* MEDIA QUERRIES */
+
+@media only screen and (max-width: 1200px) {
+  .hero__img__section {
+    padding-right: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero__img__section {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    min-width: 40%;    
+  }
+  .hero__heading {
+    margin: 0;
+  }
+  .hero__img {
+    margin: 0;
+    height: 368.61px;
+    width: 283.55px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__input {
+    width: auto;
+  }
+  #msg {
+    width: 337px;
+  }
+  .hero__button {
+    width: 194.4px;
+  }
+  .hero__img {
+    height: 314.3px;
+    width: 241.78px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .navbar__links,
+  .navbar__options {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero__img {
+    max-width: 475.46px;
+    min-height: 100%;
+  }
+  .hero__form__section {
+    padding: 2rem 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+  .hero_two_inputs {
+    flex-direction: column;
+  }
+  .hero__input {
+    width: 100%;
+  }
+  #msg {
+    width: 100%;
+  }
+  .hero__button {
+    width: 100%;
+  }
+  .hero__quantity {
+    display: flex;
+  }
+  .hero__hamburger {
+    display: inline-block;
+  }
+  .navbar {
+    justify-content: normal;
+  }
+  .hero__img__section {
+    padding: 3rem calc(1rem + 16.66667%);
+  }
+  .hero__input {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .hero__img {
+    width: 164px;
+    height: 213.2px;
+  }
+}
